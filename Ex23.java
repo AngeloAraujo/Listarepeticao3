@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Exercício23 {
+public class Ex23 {
 
 	public static void main(String[] args) {
 		
@@ -12,9 +12,10 @@ public class Exercício23 {
 		int quantidadeturmas = entrada.nextInt();
 		
 		for(int i = 1; i <= quantidadeturmas; i++) {
-		System.out.println("Digite a quantidade de alunos:");
-		alunos = entrada.nextInt();
-			while(alunos > 40) {
+			System.out.println("Digite a quantidade de alunos:");
+			alunos = entrada.nextInt();
+			
+		while(alunos > 40) {
 				System.out.println("A turma não pode ter mais de 40 alunos!");
 				System.out.println("Digite a quantidade de alunos:");
 				alunos = entrada.nextInt();

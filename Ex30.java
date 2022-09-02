@@ -1,10 +1,14 @@
 import java.util.Scanner;
-public class Exercício30 {
+public class Ex30 {
 
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
 
-		int codigogordo=0, codigomagro=0, codigoalto=0, codigobaixo=0;
+		int codigogordo=0;
+		int codigomagro=0;
+		int codigoalto=0;
+		int codigobaixo=0;
+		int k=0;
 		
 		double pesoGordo = Double.MIN_VALUE;
 		double pesoMagro = Double.MAX_VALUE;
@@ -12,7 +16,7 @@ public class Exercício30 {
 		double alturamaisbaixo = Double.MAX_VALUE;
 		double pesototal=0;
 		
-		int k=0;
+		
 		while (true) {
 		    System.out.print("Código cliente: ");
 		    int codigocliente = entrada.nextInt();

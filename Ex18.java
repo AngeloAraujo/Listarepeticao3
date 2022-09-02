@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Exercício18 {
+public class Ex18 {
 
 	public static void main(String[] args) {
 		
@@ -7,13 +7,14 @@ public class Exercício18 {
 		
 		int num;
 		
-		System.out.println("Digite um número inteiro:");
+		System.out.print("Digite um número inteiro:");
 		num = entrada.nextInt();
 	
-		if((num % 2 == 0) && (num !=2))
+		if((num % 2 == 0) && (num !=2)) {
 			System.out.println(num + " não é um número primo");
-		else
+		}else {
 			System.out.println(num + " é um número primo");
+		}
 		
 		System.out.print("Ele é divisível pelos seguintes números: ");
 		for(int i = 1; i <= num; i++) {

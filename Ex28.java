@@ -1,22 +1,27 @@
 import java.util.Scanner;
 
-public class Exercício28 {
+public class Ex28 {
 
-	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 
 		Scanner entrada = new Scanner(System.in);
 
-		int quantidadetemperatura, i = 0;
-		float temperatura, maiortemperatura= 0, menortemperatura = 0;
-		float somatemperatura = 0, mediatemperatura = 0;
+		int quantidadetemperatura;
+		int cont=0;
+		float temperatura=0;
+		float maiortemperatura= 0;
+		float menortemperatura = 0;
+		float somatemperatura = 0;
+		float mediatemperatura = 0;
 
 		System.out.println("Quantas temperaturas serão informadas?: ");
 		quantidadetemperatura = entrada.nextInt();
 
-		for (i = 0; i < quantidadetemperatura; i++) {
+		for (int i = 0; i < quantidadetemperatura; i++) {
 			System.out.println("Digite a temperatura:");
 			temperatura = entrada.nextFloat();
+			cont ++;
+			
 
 			if (i == 0) {
 				maiortemperatura = temperatura;
@@ -28,11 +33,11 @@ public class Exercício28 {
 					somatemperatura = somatemperatura + temperatura;
 				} else {
 					menortemperatura = temperatura;
-					somatemperatura = somatemperatura + temperatura;
+					somatemperatura += temperatura;
 				}
 			}
 		}
-		mediatemperatura = somatemperatura / i;
+		mediatemperatura = somatemperatura / cont;
 
 		System.out.println("A maior temperatutura foi " + maiortemperatura);
 		System.out.println("A menor temperatutura foi " + menortemperatura);

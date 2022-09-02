@@ -1,5 +1,6 @@
+import java.text.DecimalFormat;
 
-public class Exercício25 {
+public class Ex25 {
 
 	public static void main(String[] args) {
 		
@@ -9,9 +10,9 @@ public class Exercício25 {
 		
 			
 		while(x>=0 && x<50) {
-			++x;
+			x++;
 			produtos=(x*1.99);
-			System.out.println("Quantidade de produtos "+x+" valor R$= "+produtos+".");
+			System.out.println("Quantidade de produtos "+x+" valor R$= "+new DecimalFormat("#,##0.00").format(produtos)+".");
 		}
 		}
 			

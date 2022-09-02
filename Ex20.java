@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Exercício20 {
+public class Ex20 {
 
 	public static void main(String[] args) {
 		
@@ -13,7 +13,7 @@ public class Exercício20 {
 		for(int i = 1; i <= cont; i++) {
 		System.out.println("Digite a nota:");
 		float notaf = entrada.nextFloat();
-			somaf = somaf + notaf;	
+			somaf += notaf;	
 		}
 		mediaf = somaf/cont;
 		System.out.println("A média das notas foram: " + mediaf);

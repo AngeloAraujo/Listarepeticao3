@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Exercício24 {
+public class Ex24 {
 
 	public static void main(String[] args) {
 		
@@ -11,11 +11,11 @@ public class Exercício24 {
 		int cd = entrada.nextInt();
 		
 		for(int i = 1; i <= cd; i++) {
-		System.out.println("Digite o valor de cada Cd :");
-		double valor = entrada.nextDouble();
-			valortotal = valortotal + valor;	
+			System.out.println("Digite o valor de cada Cd :");
+			double valor = entrada.nextDouble();
+			valortotal +=  valor;	
 		}
-		media = (double) (valortotal/cd);
+		media =  (valortotal/(double)cd);
 		System.out.println("Valor total investido: R$ " + valortotal);
 		System.out.println("Média de valor gasto em cada CD: R$ " + media);
 		

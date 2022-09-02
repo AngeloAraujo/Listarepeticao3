@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Exercício22 {
+public class Ex22 {
 
 	public static void main(String[] args) {
 				
@@ -13,22 +13,17 @@ public class Exercício22 {
 	int votantes = entrada.nextInt();
 
 	for (int i = 1; i <= votantes; i++) {
-	System.out.println("Insira o número do candidato:  1 para o 1º Candidato, 2 para o 2ºCandidato,  3 para o Candidato ");
+	System.out.println("Insira o número do candidato:  1 para o 1º Candidato, 2 para o 2º Candidato,  3 para o 3º Candidato ");
 	int candidato = entrada.nextInt();
 
-	if (candidato == 1)
+	if (candidato == 1) {
 		candidato1++;
-
-	else if (candidato == 2)
+	}else if (candidato == 2) {
 			candidato2++;
-
-	else if (candidato == 3)
+	}else if (candidato == 3) {
 			candidato3++;
-
-	else
-		System.out.println("Insira um número de candidato válido!");
-						
-		}
+	}
+	
 	System.out.println("O número de votos para cada candidato será:");
 	System.out.println("Candidato 1 = " + candidato1);
 	System.out.println("Candidato 2 = " + candidato2);
@@ -36,4 +31,5 @@ public class Exercício22 {
 
 	entrada.close();
 	}
+}
 }

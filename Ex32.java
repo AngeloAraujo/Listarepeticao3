@@ -1,13 +1,23 @@
 import java.util.Scanner;
-public class Exercício32 {
+public class Ex32 {
 
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
 
-		int codigocidade, cidade=0, cidademaior = 0,cidademenor=0,cidademenos = 0;
-		float quantidadetotal=0,quantidademenosveiculos = 0,quantidadeveiculos=0, quantidadeacidentes=0,acidentesmaior=0,acidentesmenor=999, mediamenor=0;
+		int codigocidade=0;
+		int cidade=0;
+		int cidademaior = 0;
+		int cidademenor=0;
+		int cidademenos = 0;
+		float quantidadetotal=0;
+		float quantidademenosveiculos = 0;
+		float quantidadeveiculos=0;
+		float quantidadeacidentes=0;
+		float acidentesmaior=0;
+		float acidentesmenor=999;
+		float mediamenor=0;
 		
-		while(cidade<5) {
+		while(cidade<3) {
 			System.out.println("Digite o código da cidade: ");
 				codigocidade = entrada.nextInt();
 			System.out.println("Digite a quantidade de veiculos de passeios em 1999: ");
